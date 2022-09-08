@@ -1,0 +1,90 @@
+.hero {
+    background-image: url('/assets/images/kayak-1.jpg');
+    width: 100vw;
+    height: 55vh;
+    background-size: cover;
+    background-position-y: 35%;
+    background-repeat: none;
+    position: relative;
+    margin-bottom: $spacer-5;
+
+    &.hero--small {
+        height: 35vh;
+        width: 100%;
+    }
+
+    @include screen-medium {
+        height: calc(100vh - 4rem);
+        background-position-y: 35%;
+    }
+
+    @include screen-large {
+        background-position-y: 45%;
+    }
+
+    .hero__figcaption {
+        position: absolute;
+        background-color: $main-3;
+        box-shadow: $box-shadow-2;
+        padding: 0.5rem 1rem;
+        bottom: -1.5rem;
+        left: 50%;
+        max-width: 21rem;
+        width: 100%;
+        transform: translateX(-50%);
+        color: white;
+        text-align: center;
+        font-size: $font-4;
+        font-family: 'Raleway';
+        font-weight: 500;
+        border-radius: $border-radius-1;
+    }
+
+    .hero__title {
+        font-size: scale(0.8);
+        color: $neutral-1;
+        padding: 3rem 0 0 2rem;
+        text-shadow: 0px 0px 10px $main-5;
+        line-height: 1.25;
+
+        @include screen-medium {
+            padding: 8rem 0 0 4rem;
+            font-size: 4.5rem;
+        }
+
+        @include screen-wide {
+            font-size: 6rem;
+        }
+    }
+
+    .search {
+        @include absolute-horizontal-center;
+        bottom: -1.5rem;
+
+        @include screen-medium {
+            position: static;
+            left: 0;
+            transform: none;
+            padding: 1rem 0 0 4rem;
+            width: 100%;
+        }
+
+        .search__input {
+            width: 20rem;
+            height: 3rem;
+
+            @include screen-medium {
+                width: 23rem;
+                background-color: #002d3d96;
+                color: white;
+                font-size: $font-2;
+            }
+        }
+
+        .search__loupe {
+            bottom: 35%;
+            right: 5%;
+        }
+    }
+
+}

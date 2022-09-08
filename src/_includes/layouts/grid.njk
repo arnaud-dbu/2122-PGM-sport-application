@@ -1,0 +1,28 @@
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+
+    {% include "components/mobile-nav.njk" %}
+
+    {% block navigation %}
+        {% include "components/header.njk" %}    
+    {% endblock %}
+   
+   <section class="grid grid--{{gridType}}">
+       <div class="grid-top grid-top--{{gridType}}">
+       {% block top %}{% endblock %}
+       </div>
+
+       {% block bottom %}
+            <div class="grid-bottom grid-bottom--{{gridType}} ">
+                <div class="grid-bottom__left hide-scrollbar">
+                    {% block left %}{% endblock %}
+                </div>
+
+                <div class="grid-bottom__right">
+                    {% block right %}{% endblock %}
+                </div>
+            </div>
+       {% endblock %}
+    </section>
+{% endblock %}

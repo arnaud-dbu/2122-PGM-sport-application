@@ -1,0 +1,15 @@
+<section class="cards-container wrapper">
+    <h3 class="cards-container__main-title">{{cardsTitle}}</h3>
+    <div class="cards cards--{{cardsType}} hide-scrollbar">
+
+        {% if data %}
+            {% for route in routesExtended %}
+                {% include "components/card.njk" %}
+            {% endfor %}
+        {% else %}
+            {% for route in routes %}
+                {% include "components/card.njk" %}
+            {% endfor %}
+        {% endif %}
+    </div>
+</section>

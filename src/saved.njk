@@ -1,0 +1,23 @@
+---
+
+pageTitle: Saved | Go paddling
+
+header: wrapper
+searchPlaceholder: Search your favourites
+cardsType: grid
+gridType: wide
+
+---
+
+{% extends "layouts/grid.njk" %}
+
+{% block top %}
+    {% include "components/search-form.njk" %}
+{% endblock %}
+
+{% block bottom %}
+    {% set cardsTitle = 'Saved' %}
+    {% set data = 'route' %}
+    {% include "components/cards-container.njk" %}
+{% endblock %}  
+

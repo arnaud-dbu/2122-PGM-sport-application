@@ -1,0 +1,30 @@
+---
+
+pageTitle: Home | Go paddling
+
+searchPlaceholder: Where are you headed?
+cardsType: grid
+
+---
+
+{% extends "layouts/grid.njk" %}
+
+{% block top %}
+    {% include "components/search-form.njk" %}
+    <div class="grid-top__icons">
+        <svg class="grid-top__icon grid-top__icon--map" class="" xmlns="http://www.w3.org/2000/svg" width="23.706" height="18.459" viewBox="0 0 23.706 18.459"> <path id="noun-map-4724932" d="M111.2,78.45a.791.791,0,0,0-.576-.761l-7.375-2.077a.805.805,0,0,0-.429,0L95.661,77.63,88.5,75.613a.791.791,0,0,0-1,.761v14.8a.791.791,0,0,0,.576.761l7.375,2.076a.805.805,0,0,0,.429,0L103.038,92l7.161,2.017a.829.829,0,0,0,.214.029.789.789,0,0,0,.789-.789Zm-14.75.6,5.795-1.632v13.16L96.452,92.21Zm-7.375-1.632,5.795,1.632V92.21l-5.795-1.631ZM109.622,92.21l-5.795-1.632V77.418l5.795,1.631Z" transform="translate(-87.496 -75.584)" fill="#6e7574"/> </svg>
+        <svg class="grid-top__icon" xmlns="http://www.w3.org/2000/svg" width="20.997" height="20.43" viewBox="0 0 20.997 20.43"> <g id="noun-filter-4651669" transform="translate(-101.109 -37.837)"> <path id="Path_41" data-name="Path 41" d="M101.96,41.809h1.54a3.118,3.118,0,0,0,6,0h11.754a.851.851,0,1,0,0-1.7H109.5a3.118,3.118,0,0,0-6,0h-1.54a.851.851,0,1,0,0,1.7Zm4.54-2.27a1.42,1.42,0,1,1-1,.416,1.419,1.419,0,0,1,1-.416Z" fill="#6e7574"/> <path id="Path_42" data-name="Path 42" d="M121.259,208.277h-2.107a3.118,3.118,0,0,0-6,0H101.964a.851.851,0,1,0,0,1.7h11.187a3.118,3.118,0,0,0,6,0h2.107a.851.851,0,1,0,0-1.7Zm-5.107,2.27h0a1.42,1.42,0,1,1,1-.416,1.419,1.419,0,0,1-1,.416Z" transform="translate(-0.004 -161.076)" fill="#6e7574"/> <path id="Path_43" data-name="Path 43" d="M121.265,376.447H109.511a3.118,3.118,0,0,0-6,0h-1.54a.851.851,0,1,0,0,1.7h1.54a3.118,3.118,0,0,0,6,0h11.754a.851.851,0,1,0,0-1.7Zm-14.755,2.27a1.42,1.42,0,1,1,1-.416,1.419,1.419,0,0,1-1,.416Z" transform="translate(-0.011 -322.153)" fill="#6e7574"/> </g> </svg>
+    </div>
+
+    {% include "components/filters.njk" %}
+{% endblock %}
+
+{% block left %}
+    {% set data = 'routes' %}
+    {% include "components/cards-container.njk" %}
+{% endblock %}
+
+{% block right %}
+    <iframe width="500" height="300" src="https://api.maptiler.com/maps/50f49359-ce4b-4714-a6c6-5d327c91f929/?key=qACVPWNY56mco4s7x42W#2.4/37.25704/64.91623"></iframe>
+{% endblock %}
+

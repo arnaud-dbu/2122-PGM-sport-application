@@ -1,0 +1,58 @@
+.btn {
+    border-radius: $border-radius-1;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    color: $main-4;
+    display: block;
+    text-align: center;
+    box-shadow: $box-shadow-1;
+    transition: background-color 0.3s ease;
+}
+
+.btn--full-width {
+    width: 100%;
+}
+
+.btn--white {
+    background-color: $neutral-6;
+    opacity: 95%;
+
+    &:hover {
+        opacity: 85%;
+    }
+}
+
+.btn--brown {
+    background-color: $accent-3;
+    color: $neutral-1;
+
+    &:hover {
+        background-color: $accent-4;
+    }
+}
+
+.btn--blue {
+    background-color: $main-1;
+    color: $neutral-1;
+
+    &:hover {
+        background-color: $main-2;
+    }
+}
+
+.btn--transparent {
+    background-color: transparent;
+    color: $neutral-1;
+    border: 1px solid $neutral-1;
+}
+
+.btn--full-width {
+    width: 100%;
+}
+
+.btn__dropdown {
+    transform: rotate(90deg) scale(0.4);
+}

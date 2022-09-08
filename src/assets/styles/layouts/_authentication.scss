@@ -1,0 +1,115 @@
+.auth {
+    background-image: url('/assets/images/kayak-12.jpg');
+    background-position-x: 35%;
+    @include full-screen();
+
+    @include screen-medium {
+        background-image: none;
+        display: flex;
+    }
+
+    .auth__img {
+        @include screen-medium {
+            @include half-screen();
+            background-position-x: 70%;
+        }
+
+        @include screen-large {
+            width: 55vw;
+        }
+    }
+
+    .auth__content-background {
+        @include flex-middle();
+        @include full-screen();
+
+        @include screen-medium {
+            background-image: $gradient-1;
+            @include half-screen();
+        }
+
+        @include screen-large {
+            background-image: $gradient-1;
+            width: 45vw;
+        }
+
+        .auth__content {
+            width: 100%;
+            max-width: 22.5rem;
+
+            @include screen-large {
+                max-width: 22.5rem;
+            }
+
+            @include screen-wide {
+                max-width: 30rem;
+            }
+
+            .auth__title {
+                color: $neutral-6;
+                position: relative;
+                bottom: $spacer-3;
+
+                @include screen-medium {
+                    color: $main-4;
+                }
+            }
+
+            .auth__form {
+                @include flex-column;
+
+                .auth__input {
+                    border-radius: $border-radius-1;
+                    background-color: $main-5;
+                    opacity: 40%;
+                    padding: .75rem 1rem;
+                    margin-bottom: $spacer-2;
+                    box-shadow: $box-shadow-1;
+                    color: $neutral-1;
+
+                    @include screen-medium {
+                        background-color: $neutral-1;
+                        opacity: 0.65;
+                        color: $main-5;
+                    }
+                }
+
+                .auth__label {
+                    color: $neutral-6;
+                    padding-left: $spacer-3;
+                    font-size: $font-1;
+
+                    @include screen-medium {
+                        color: $main-4;
+                    }
+                }
+            }
+
+            .auth__btn {
+                position: relative;
+
+                @include screen-medium {
+                    color: $neutral-1;
+                    background-color: $main-2;
+
+                    &:hover {
+                        background-color: $main-3;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .auth__troubleshooting {
+                @include flex-column-end;
+
+                .auth__link {
+                    // color: $neutral-6;
+
+                    @include screen-medium {
+                        color: $main-4;
+                    }
+                }
+            }
+        }
+    }
+}

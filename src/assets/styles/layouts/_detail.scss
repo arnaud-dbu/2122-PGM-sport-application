@@ -1,0 +1,110 @@
+.main-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 3rem 0 1.75rem;
+    background-color: $neutral-6;
+    position: relative;
+    bottom: 2rem;
+    z-index: -1;
+
+    .main-info__icon {
+        @include flex-column-center;
+        gap: 0.5rem;
+
+        span {
+            font-size: $font-1;
+            color: $main-5;
+            font-family: 'Raleway';
+            font-weight: 500;
+        }
+    }
+}
+
+.details {
+    padding: 0 1rem;
+    margin-bottom: $spacer-3;
+
+    .details__description {
+        position: relative;
+        bottom: 0.5rem;
+        margin-bottom: $spacer-2;
+    }
+
+    .details__heading {
+        font-size: $font-3;
+        position: relative;
+        font-family: 'Raleway';
+        font-weight: 500;
+
+        &::after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            height: 0.5px;
+            background-color: $main-5;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .details__title {
+        margin-bottom: 1rem;
+
+        .details__title-item {
+            position: relative;
+            left: 0.5rem;
+        }
+    }
+
+    .details__title--coordinates {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .details__copy {
+            transform: scale(1.2);
+        }
+    }
+
+    .details__buttons {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            @include flex-row-center();
+            gap: 0.5rem;
+            width: calc(50% - 0.5rem);
+        }
+    }
+}
+
+.map {
+    iframe {
+        display: flex;
+        margin: 1.5rem auto;
+        border-radius: 25px;
+        width: 95%;
+    }
+
+    @include screen-large {
+        display: none;
+    }
+}
+
+.images {
+    padding: 0 1rem;
+
+    .images-container {
+        row-gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .link {
+        display: block;
+        margin-top: 1rem;
+    }
+}

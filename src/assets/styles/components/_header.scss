@@ -1,0 +1,56 @@
+header {
+    background-color: $main-3;
+    height: 4rem;
+    box-shadow: $box-shadow-1;
+
+    .header__content {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+
+        .header__hamburger {
+            width: 4rem;
+            height: 4rem;
+            position: relative;
+            right: 1rem;
+            cursor: pointer;
+
+            @include screen-medium {
+                display: none;
+            }
+        }
+
+        .header__logo {
+            width: 4rem;
+            height: 4rem;
+            @include absolute-horizontal-center;
+            top: 0;
+
+            @include screen-medium {
+                position: static;
+                transform: translateX(-0.75rem);
+            }
+        }
+
+        .header__nav {
+            display: none;
+
+            a {
+                color: white;
+                font-family: 'Raleway';
+
+                &:hover {
+                    opacity: 0.85;
+                }
+            }
+
+            @include screen-medium {
+                color: white;
+                margin-left: auto;
+                display: flex;
+                font-weight: 400;
+                gap: $spacer-8;
+            }
+        }
+    }
+}

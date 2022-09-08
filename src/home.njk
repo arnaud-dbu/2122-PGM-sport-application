@@ -1,0 +1,42 @@
+---
+
+pageTitle: Home | Go paddling
+
+searchPlaceholder: Search by country, city, park or trail name
+
+imageTitle: Planning a trip?
+buttonTitle: Start exploring
+cardsData: kayak
+header: wrapper
+
+---
+
+{% extends "layouts/default.njk" %}
+
+{% block main %}
+
+<section class="hero">
+    <div class="hero__content wrapper">
+        <h1 class="hero__title font--white">Get inspired,<br> find new trails</h1>
+        {% include "components/search-form.njk" %}
+    </div>
+</section>
+
+{% set cardsTitle = "Most popular trails" %}
+{% include "components/cards-container.njk" %}
+
+{% set cardsTitle = "Newly added trails" %}
+{% include "components/cards-container.njk" %}
+
+{% set listTitle = "Browse by activity type" %}
+{% include "components/list-container.njk" %}
+
+{% include "components/image-block.njk" %}
+
+{% set cardsTitle = "Best rated near Brussels" %}
+{% include "components/cards-container.njk" %}
+
+{% set cardsTitle = "Family friendly trails" %}
+{% include "components/cards-container.njk" %}
+
+{% endblock %}

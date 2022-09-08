@@ -1,0 +1,35 @@
+{
+  "name": "eleventy-sport-pgm-arnadebu",
+  "version": "1.0.0",
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7521368&assignment_repo_type=AssignmentRepo)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "watch": "npx sass src/assets/styles/main.scss src/assets/styles/main.css --watch --style=compressed",
+    "start": "concurrently npm:serve npm:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgmgent-ui-prototyping/eleventy-sport-pgm-arnadebu.git"
+  },
+  "keywords": [
+    "Eleventy",
+    "Portfolio",
+    "SCSS",
+    "SSG"
+  ],
+  "author": "Arnaud De Burchgraeve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgmgent-ui-prototyping/eleventy-sport-pgm-arnadebu/issues"
+  },
+  "homepage": "https://github.com/pgmgent-ui-prototyping/eleventy-sport-pgm-arnadebu#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "sass": "^1.49.11"
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}

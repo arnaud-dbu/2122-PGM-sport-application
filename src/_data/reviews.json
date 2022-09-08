@@ -1,0 +1,26 @@
+[
+    {
+    "name": "Bart Sluys",
+    "image": "avatar-2.jpg",
+    "score": "4.3",
+    "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    },
+    {
+    "name": "Bob Watermans",
+    "image": "avatar-4.jpg",
+    "score": "3.5",
+    "review": "Lorem ipsum , sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+    "name": "Veroniek Corbiaux",
+    "image": "avatar-1.jpg",
+    "score": "4.5",
+    "review": "Lorem consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+    "name": "Eva De Smeth",
+    "image": "avatar-3.jpg",
+    "score": "3.3",
+    "review": "Lorem amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+    }
+]

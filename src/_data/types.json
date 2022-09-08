@@ -1,0 +1,21 @@
+[{
+        "name": "Recreational kayaking",
+        "image": "type-1.jpg"
+    },
+    {
+        "name": "Sea kayaking",
+        "image": "type-2.jpg"
+    },
+    {
+        "name": "Whitewater kayaking",
+        "image": "type-3.jpg"
+    },
+    {
+        "name": "Kayak surfing",
+        "image": "type-4.jpg"
+    },
+    {
+        "name": "Kayak fishing",
+        "image": "type-5.jpg"
+    }
+]

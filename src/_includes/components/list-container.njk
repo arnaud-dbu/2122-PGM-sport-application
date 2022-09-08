@@ -1,0 +1,18 @@
+<section class="cards-container wrapper">
+    <h3 class="cards-container__main-title">{{listTitle}}</h3>
+    <div class="list list--{{listType}} hide-scrollbar">
+
+        {% if data %}
+            {% for item in reviews %}
+                {% include "components/list-item.njk" %}
+            {% endfor %}
+        {% else %}
+            {% for item in types %}
+                {% include "components/list-item.njk" %}
+            {% endfor %}
+        {% endif %}
+
+        {% if buttonName %}
+            <button class="btn btn--blue btn--full-width">{{buttonName}}</buttonc>
+        {% endif %}
+</section>

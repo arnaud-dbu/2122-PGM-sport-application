@@ -1,0 +1,226 @@
+.card {
+    border-radius: $border-radius-1;
+    box-shadow: $box-shadow-1;
+    transition: transform 0.25s ease;
+
+    &:hover .card__img {
+        //    background-size: 101%;
+    }
+
+    &:hover {
+        transform: scale(1.015);
+    }
+}
+
+.cards-container {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+
+    @include screen-large {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cards-container__main-title {
+        // font-size: 1.7rem;
+        margin-bottom: 0.75rem;
+        padding-left: 1rem;
+    }
+
+    .cards {
+        display: flex;
+        gap: 1rem;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        padding-bottom: 1rem;
+        position: relative;
+
+        @include screen-large {
+            overflow: visible;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1.25rem;
+                height: 2rem;
+                top: 50%;
+                transform: translateY(-60%);
+                right: -2.5rem;
+                background-image: url('/assets/icons/next.svg');
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.card--route {
+    width: 17.5rem;
+    height: 17.5rem;
+
+    @include screen-large {
+        height: 15rem;
+        width: 20%;
+    }
+
+    .card__img {
+        background-image: url('/assets/images/register.jpg');
+        background-size: cover;
+        height: 70%;
+        width: 17.5rem;
+        transition: background-size 0.25s ease;
+        background-repeat: no-repeat;
+
+        @include screen-large {
+            width: 100%;
+        }
+
+        position: relative;
+        border-radius: $border-radius-1 $border-radius-1 0 0;
+
+        .card__figcaption {
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            border-radius: $border-radius-1;
+            color: $neutral-1;
+            width: fit-content;
+            padding: 0.25rem 1rem;
+
+            .card__figcaption-picto {
+                transform: scale(1.4)
+            }
+        }
+
+        .card__save {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            transform: scale(1.5);
+            opacity: 75%;
+
+            &:hover {
+                opacity: 75%;
+            }
+        }
+    }
+
+    .card__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30%;
+        padding: 0.75rem;
+        gap: $spacer-1;
+
+        .card__main-title {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: $accent-5;
+        }
+
+        .card__details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .card__detail {
+                display: flex;
+                align-items: center;
+                gap: $spacer-2;
+
+                .card__detail-title {
+                    font-size: $font-2;
+                    color: $neutral-3;
+                }
+
+                .card__detail-icon {
+                    transform: scale(2);
+                    position: relative;
+                    bottom: 0.1rem;
+                    fill: $neutral-3;
+                }
+            }
+        }
+    }
+}
+
+.cards.cards--grid {
+    @include flex-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+
+    .card--route {
+        margin-bottom: 1rem;
+
+        @include screen-small {
+            width: calc(50% - 0.5rem);
+        }
+
+        @include screen-medium {
+            width: 100%;
+        }
+    }
+}
+
+.card.card--photo {
+    height: 5rem;
+    width: 23%;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.card--scroll-wide {
+    overflow: auto;
+    width: calc(25rem - 2rem);
+
+    .card--route {
+
+        width: 25rem;
+        height: 15rem;
+
+        .card__img {
+            width: 17.5rem;
+        }
+    }
+}
+
+.cards--grid {
+
+    &::after {
+        display: none;
+    }
+
+    flex-direction: column;
+    padding-right: 1rem;
+
+    @include screen-small {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 100%;
+
+        @include screen-small {
+            width: calc(50% - 0.5rem);
+        }
+
+        @include screen-medium {
+            width: calc(32.5% - 0.5rem);
+        }
+
+        @include screen-large {
+            width: calc(24.5% - 0.5rem);
+        }
+
+        .card__img {
+            width: 100%;
+        }
+    }
+}

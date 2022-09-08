@@ -1,0 +1,45 @@
+body {
+    font-family: 'Quasimoda';
+}
+
+h1 {
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.55rem;
+    margin-bottom: $spacer-2;
+}
+
+h1,
+h2,
+h3,
+label {
+    font-family: 'Raleway';
+    color: $main-4;
+}
+
+$font-1: 0.8rem;
+$font-2: 1rem;
+$font-3: 1.25rem;
+$font-4: 1.563rem;
+
+.text--white {
+    color: $neutral-1;
+}
+
+.text--bold {
+    font-weight: 600;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--end {
+    text-align: end;
+}

@@ -1,0 +1,23 @@
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+    <main class="auth">
+        <div class="auth__img" style="background-image: url('/assets/images/{{image}}')"></div>
+        <div class="auth__content-background">
+            <div class="auth__content p-s">
+                <h2 class="auth__title">{{title}}</h2>
+                <form class="auth__form">
+                    {% block authentication %}{% endblock %}
+                    <label class="auth__label">E-mail</label>
+                    <input class="auth__input" type="text">
+                    <label class="auth__label">Password</label>
+                    <input class="auth__input" type="password">
+                </form>
+                <a href="/home" class="auth__btn btn btn--full-width btn--white">{{button}}</a>
+                <div class="auth__troubleshooting">
+                    {% block troubleshooting %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

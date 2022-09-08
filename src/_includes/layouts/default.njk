@@ -1,0 +1,21 @@
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+
+    {% include "components/mobile-nav.njk" %}
+
+    {% block navigation %}
+        {% include "components/header.njk" %}    
+    {% endblock %}
+
+    <main>
+        {% block main %}
+            {{ content | safe }}
+        {% endblock %}
+    </main>
+
+    {% block footer %}
+        {% include "components/footer.njk" %}    
+    {% endblock %}
+{% endblock %}
+

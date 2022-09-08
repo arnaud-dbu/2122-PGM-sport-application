@@ -1,0 +1,29 @@
+.link {
+    color: $main-4;
+}
+
+.link--white {
+    color: $neutral-6;
+
+    &:hover {
+        color: $neutral-1;
+        opacity: 0.9;
+        text-decoration: underline;
+    }
+}
+
+.link--blue {
+    color: $main-4;
+
+    &:hover {
+        color: $main-3;
+    }
+}
+
+.link--underline {
+    text-decoration: underline;
+}
+
+.link--center {
+    text-align: center;
+}

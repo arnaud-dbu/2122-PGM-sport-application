@@ -1,0 +1,23 @@
+[
+    {
+        "filterName": "Sort"
+    },
+    {
+        "filterName": "Activity"
+    },
+    {
+        "filterName": "Difficulty"
+    },
+    {
+        "filterName": "Length"
+    },
+    {
+        "filterName": "Route Type"
+    },
+    {
+        "filterName": "Rating"
+    },
+    {
+        "filterName": "Amenities"
+    }
+]

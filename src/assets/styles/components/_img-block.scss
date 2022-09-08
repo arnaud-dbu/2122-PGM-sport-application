@@ -1,0 +1,25 @@
+.img-block {
+    background-image: url('/assets/images/kayak-2.jpg');
+    height: 40rem;
+    margin: 3rem 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 35%;
+
+    .img-block__content {
+        padding-left: 1rem;
+        padding-top: 16rem;
+    }
+
+
+    .img-block__btn {
+        width: fit-content;
+        text-shadow: $box-shadow-1;
+    }
+
+    .img-block__title {
+        @include screen-medium {
+            font-size: 4rem;
+        }
+    }
+}

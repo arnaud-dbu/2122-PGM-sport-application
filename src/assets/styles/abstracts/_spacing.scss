@@ -1,0 +1,72 @@
+// || Spacing
+
+$spacer-0: 0;
+$spacer-1: 0.25rem;
+$spacer-2: 0.5rem;
+$spacer-3: 1rem;
+$spacer-4: 1.5rem;
+$spacer-5: 2rem;
+$spacer-6: 2.5rem;
+
+$spacer-7: 3rem;
+$spacer-8: 4rem;
+$spacer-9: 5rem;
+$spacer-10: 6rem;
+$spacer-11: 7rem;
+$spacer-12: 8rem;
+
+.mb-0 {margin-bottom: $spacer-0};
+.mb-xxs {margin-bottom: $spacer-1};
+.mb-xs {margin-bottom: $spacer-2};
+.mb-s {margin-bottom: $spacer-3};
+.mb-m {margin-bottom: $spacer-4};
+.mb-l {margin-bottom: $spacer-5};
+.mb-xl {margin-bottom: $spacer-6};
+.mb-xxl {margin-bottom: $spacer-7};
+
+.mt-0 {margin-top: $spacer-0};
+.mt-xxs {margin-top: $spacer-1};
+.mt-xs {margin-top: $spacer-2};
+.mt-s {margin-top: $spacer-3};
+.mt-m {margin-top: $spacer-4};
+.mt-l {margin-top: $spacer-5};
+.mt-xl {margin-top: $spacer-6};
+.mt-xxl {margin-top: $spacer-7};
+
+.m-0 {margin: 0 $spacer-0};
+.m-xxs {margin: 0 $spacer-1};
+.m-xs {margin: 0 $spacer-2};
+.m-s {margin: 0 $spacer-3};
+.m-m {margin: 0 $spacer-4};
+.m-l {margin: 0 $spacer-5};
+.m-xl {margin: 0 $spacer-6};
+.m-xxl {margin: 0 $spacer-7};
+
+.pb-0 {padding-bottom: $spacer-0};
+.pb-xxs {padding-bottom: $spacer-1};
+.pb-xs {padding-bottom: $spacer-2};
+.pb-s {padding-bottom: $spacer-3};
+.pb-m {padding-bottom: $spacer-4};
+.pb-l {padding-bottom: $spacer-5};
+.pb-xl {padding-bottom: $spacer-6};
+.pb-xxl {padding-bottom: $spacer-7};
+
+.pt-0 {padding-top: $spacer-0};
+.pt-xxs {padding-top: $spacer-1};
+.pt-xs {padding-top: $spacer-2};
+.pt-s {padding-top: $spacer-3};
+.pt-m {padding-top: $spacer-4};
+.pt-l {padding-top: $spacer-5};
+.pt-xl {padding-top: $spacer-6};
+.pt-xxl {padding-top: $spacer-7};
+
+.p-0 {padding: 0 $spacer-0};
+.p-xxs {padding: 0 $spacer-1};
+.p-xs {padding: 0 $spacer-2};
+.p-s {padding: 0 $spacer-3};
+.p-m {padding: 0 $spacer-4};
+.p-l {padding: 0 $spacer-5};
+.p-xl {padding: 0 $spacer-6};
+.p-xxl {padding: 0 $spacer-7};
+
+

@@ -1,0 +1,82 @@
+.list {
+    margin-top: $spacer-1;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+
+.list-item {
+    @include flex-column;
+    align-items: center;
+    cursor: pointer;
+    width: 12rem;
+    gap: $spacer-3;
+
+    &:hover .list-item__img {
+        opacity: 90%;
+    }
+
+    .list-item__img {
+        background-image: url('/assets/images/kayak-1.jpg');
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        background-size: cover;
+    }
+
+    .list-item__title {
+        text-align: center;
+        font-size: $font-3;
+    }
+}
+
+.list--vertical {
+
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+    .list-item {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .list-item__img {
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: $spacer-2;
+            background-size: cover;
+            position: relative;
+
+            .list-item__figcaption {
+                @include flex-center;
+                right: -0.5rem;
+                top: -0.5rem;
+                position: absolute;
+                color: $neutral-1;
+                background-color: $accent-2;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                font-size: $font-2;
+                box-shadow: $box-shadow-1;
+            }
+        }
+
+        .list-item__body {
+            width: 100%;
+            height: 100%;
+
+
+            .list-item__description {
+                display: block;
+                width: 100%;
+                word-break: break-word;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+footer {
+    background-color: $main-3;
+    color: $neutral-1;
+
+    .footer__content {
+        padding: $spacer-3;
+
+        .footer__logo {
+            width: 8rem;
+        }
+
+        .footer__links {
+            .footer__nav {
+                margin: $spacer-5 0;
+                font-size: 1.25rem;
+
+                a {
+                    color: $neutral-1;
+
+                    &:hover {
+                        color: $neutral-1;
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .footer__socials {
+                display: flex;
+                gap: $spacer-3;
+                margin-bottom: $spacer-3;
+
+                .socials__item {
+                    &:hover {
+                        color: $neutral-1;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+
+        .footer__copyright {
+            font-size: 0.75rem;
+            display: block;
+        }
+    }
+
+}

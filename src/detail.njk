@@ -1,0 +1,32 @@
+---
+
+pageTitle: Saint-Martin-d'Ardèche | Go paddling
+
+cardsType: grid
+listType: vertical
+gridType: detail
+buttonName: Write a review
+
+---
+
+{% extends "layouts/grid.njk" %}
+
+{% block left %}
+
+    {% include "components/detail.njk" %}
+
+    {% set listTitle = "Reviews" %}
+    {% set data = 'reviews' %}
+    {% include "components/list-container.njk" %}
+
+
+    {% set cardsTitle = "Similar trails" %}
+    {% include "components/cards-container.njk" %}
+
+{% endblock %}
+
+{% block right %}
+    <iframe width="500" height="300" src="https://api.maptiler.com/maps/7bd12708-3cd4-4894-8178-c2396bde2764/?key=qACVPWNY56mco4s7x42W#13.1/42.20689/9.12645"></iframe>          
+{% endblock %}
+
+

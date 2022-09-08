@@ -1,0 +1,23 @@
+---
+
+pageTitle: Register | Go paddling
+
+title: Register
+image: kayak-12.jpg
+button: Register
+
+---
+
+{% extends "layouts/authentication.njk" %}
+
+{% block authentication %}
+    <label class="auth__label">First Name</label>
+    <input class="auth__input" type="text">
+    <label class="auth__label">Last Name</label>
+    <input class="auth__input" type="text">
+{% endblock %}
+
+{% block troubleshooting %}
+    <a class="auth__link link link--white" href="/login">Already have an account?</a>
+{% endblock %}
+    
